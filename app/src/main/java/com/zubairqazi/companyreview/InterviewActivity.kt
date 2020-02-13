@@ -1,6 +1,5 @@
 package com.zubairqazi.companyreview
 
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -16,8 +15,6 @@ class InterviewActivity : AppCompatActivity() {
         val interview = intent.getParcelableExtra<Interview>("Interview")
 
         val employerName = findViewById<TextView>(R.id.textView_employer)
-//        val interviewDate = findViewById<TextView>(R.id.interView)
-//        val interviewSource: String?,
         val jobTitle = findViewById<TextView>(R.id.textView_jobTitle)
         val location = findViewById<TextView>(R.id.textView_location)
         val outcome = findViewById<TextView>(R.id.textView_outcome)
@@ -26,6 +23,7 @@ class InterviewActivity : AppCompatActivity() {
         val processOverallExperience = findViewById<TextView>(R.id.textView_overallExperience)
         val sqLogoUrl = findViewById<ImageView>(R.id.image_companyLogo)
 
+        // Load company logo from url into ImageView
         Picasso.get().load(interview.sqLogoUrl).into(sqLogoUrl)
 
         employerName.text = interview.employerName

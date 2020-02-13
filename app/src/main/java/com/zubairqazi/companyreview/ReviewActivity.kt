@@ -23,7 +23,6 @@ class ReviewActivity : AppCompatActivity() {
         val pros = findViewById<TextView>(R.id.textView_pros)
         val cons = findViewById<TextView>(R.id.textView_cons)
         val reviewDateTime = findViewById<TextView>(R.id.textView_reviewDateTime)
-//        val ceoApproval = findViewById<TextView>(R.id.textView_ceoApproval)
         val advice = findViewById<TextView>(R.id.textView_advice)
         val compensationAndBenefitsRating = findViewById<TextView>(R.id.textView_compBenRatings)
         val cultureAndValuesRating = findViewById<TextView>(R.id.textView_cultValueRatings)
@@ -36,16 +35,15 @@ class ReviewActivity : AppCompatActivity() {
         val workLifeBalanceRating = findViewById<TextView>(R.id.textView_workBalRating)
         val sqLogoUrl = findViewById<ImageView>(R.id.image_companyLogo)
 
+        // Load company logo from url into ImageView
         Picasso.get().load(review.sqLogoUrl).into(sqLogoUrl)
 
         employerName.text = review.employerName
         jobTitle.text = review.jobTitle
         location.text = review.location
         overall.text = review.overall
-//        employmentStatus.text = review.employmentStatus
         pros.text = "Pros: \n" + review.pros + "\n"
         cons.text = "Cons: \n" + review.cons + "\n"
-//        ceoApproval.text = review.ceoApproval
         advice.text = "Advice: \n" + review.advice + "\n"
         compensationAndBenefitsRating.text = "compensationAndBenefitsRating: " + review.compensationAndBenefitsRating
         cultureAndValuesRating.text = "cultureAndValuesRating: " + review.cultureAndValuesRating

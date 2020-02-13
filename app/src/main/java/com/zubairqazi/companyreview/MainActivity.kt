@@ -1,14 +1,11 @@
 package com.zubairqazi.companyreview
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
-import okhttp3.internal.wait
-import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 import java.lang.Exception

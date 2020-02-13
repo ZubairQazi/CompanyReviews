@@ -19,14 +19,15 @@ class SalaryActivity : AppCompatActivity() {
         val employerName = findViewById<TextView>(R.id.textView_employer)
         val jobTitle= findViewById<TextView>(R.id.textView_jobTitle)
         val location = findViewById<TextView>(R.id.textView_location)
-        var empBasePay1 = findViewById<TextView>(R.id.textView_basePay1)
-        var empBasePay2 = findViewById<TextView>(R.id.textView_basePay2)
+        val empBasePay1 = findViewById<TextView>(R.id.textView_basePay1)
+        val empBasePay2 = findViewById<TextView>(R.id.textView_basePay2)
         val employmentStatus = findViewById<TextView>(R.id.textView_employmentStatus)
-        var meanEmpBasePay = findViewById<TextView>(R.id.textView_meanBasePay)
+        val meanEmpBasePay = findViewById<TextView>(R.id.textView_meanBasePay)
         val reviewDateTime = findViewById<TextView>(R.id.textView_reviewDateTime)
         val payPeriod = findViewById<TextView>(R.id.textView_payPeriod)
         val sqLogoUrl = findViewById<ImageView>(R.id.image_companyLogo)
 
+        // Load company logo from url into ImageView
         Picasso.get().load(salary.sqLogoUrl).into(sqLogoUrl)
 
         employerName.text = salary.employerName

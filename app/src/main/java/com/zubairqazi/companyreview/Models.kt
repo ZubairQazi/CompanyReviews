@@ -2,7 +2,6 @@ package com.zubairqazi.companyreview
 
 import android.os.Parcel
 import android.os.Parcelable
-import java.io.Serializable
 
 // MODEL OBJECTS
 
