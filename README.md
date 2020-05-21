@@ -1,5 +1,5 @@
 # CompanyReviews
-Android application built in Kotlin, designed to take JSON input and parse the data into an application for reviewing companies. Made for Glassdoor application process.
+Android application built in Kotlin, designed to take JSON input and parse the data into an application for reviewing companies.
 
 There are three different model objects: Review, Interview, and Salary, where the given data is stored. The data is first retreived using Okhttp, and then parsed into the model objects using GSON. Each model object can be clicked to open a second screen with their corresponding data populating that screen. The images for each company are also retrieved and displayed using a 3rd party library (Picasso).
 
