@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val url = "https://raw.githubusercontent.com/vikrama/feed-json-sample/master/feed.json"
 
         val request = Request.Builder()
-            .header("Authorization", "7CACB198ED14ABB2EB1D7C1A48CD592E")
+            .header("Authorization", "Token")
             .url(url).build()
 
         val client = OkHttpClient()
